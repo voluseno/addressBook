@@ -1,23 +1,12 @@
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
+package com.clod.addressbook;
 
-import java.lang.reflect.Type;
-import java.sql.Array;
 import java.util.ArrayList;
-//import com.google.gson.Gson;
 
 /**
  * Created by Lake on 13/11/2016.
  */
-public class AddressBook implements Command{
+public class AddressBook {
     private ArrayList<Contact> list = new ArrayList<>();
-    Gson gson = new Gson();
-    String json;
-
-
-    public void run(){
-        System.out.println("AddressBook.run()");
-    }
 
     /**
      * Adds a contact to the book
@@ -43,18 +32,6 @@ public class AddressBook implements Command{
             }
         }
         return null;
-    }
-
-    public void saveList(){
-        String json = gson.toJson(list);
-        System.out.println(json);
-    }
-
-    public void openList(){
-        Type collecType = new TypeToken<ArrayList<Contact>>(){}.getType();
-        //ArrayList<Contact> list2 = gson.fromJson(json, collecType);
-        list = gson.fromJson(json, collecType);
-        //list = list2;
     }
 
     public String toString() {

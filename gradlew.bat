@@ -13,7 +13,7 @@ if "%DIRNAME%" == "" set DIRNAME=.
 set APP_BASE_NAME=%~n0
 set APP_HOME=%DIRNAME%
 
-@rem Add default JVM options here. You can also use JAVA_OPTS and GRADLE_OPTS to pass JVM options to this script.
+@rem com.clod.addressbook.ADDdressbook.command.ADD default JVM options here. You can also use JAVA_OPTS and GRADLE_OPTS to pass JVM options to this script.
 set DEFAULT_JVM_OPTS=
 
 @rem Find java.exe
@@ -24,7 +24,7 @@ set JAVA_EXE=java.exe
 if "%ERRORLEVEL%" == "0" goto init
 
 echo.
-echo ERROR: JAVA_HOME is not set and no 'java' command could be found in your PATH.
+echo ERROR: JAVA_HOME is not set and no 'java' com.clod.addressbook.command could be found in your PATH.
 echo.
 echo Please set the JAVA_HOME variable in your environment to match the
 echo location of your Java installation.
@@ -46,13 +46,13 @@ echo location of your Java installation.
 goto fail
 
 :init
-@rem Get command-line arguments, handling Windows variants
+@rem Get com.clod.addressbook.command-line arguments, handling Windows variants
 
 if not "%OS%" == "Windows_NT" goto win9xME_args
 if "%@eval[2+2]" == "4" goto 4NT_args
 
 :win9xME_args
-@rem Slurp the command line arguments.
+@rem Slurp the com.clod.addressbook.command line arguments.
 set CMD_LINE_ARGS=
 set _SKIP=2
 
@@ -67,7 +67,7 @@ goto execute
 set CMD_LINE_ARGS=%$
 
 :execute
-@rem Setup the command line
+@rem Setup the com.clod.addressbook.command line
 
 set CLASSPATH=%APP_HOME%\gradle\wrapper\gradle-wrapper.jar
 
