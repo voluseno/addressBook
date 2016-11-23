@@ -20,9 +20,10 @@ public class OPEN implements Command {
     @Override
     public void run(State state) {
         Gson gson = new Gson();
-        try(FileReader fr = new FileReader(fileName)) {
+        try(FileReader fr = new FileReader(fileName + ".json")) {
             AddressBook ab = gson.fromJson(fr, AddressBook.class);
             state.setBook(ab);
+            System.out.println(ab + "\nBook " + fileName + ".json is now ready");
         } catch (java.io.IOException e) {
             System.err.println("File not found: " + fileName);
         }
