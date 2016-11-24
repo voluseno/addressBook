@@ -27,7 +27,7 @@ public class AddressBook {
      */
     public Contact searchByName(String name){
         for(Contact c : list){
-            if(name.equalsIgnoreCase(c.getName())){
+            if(name.equalsIgnoreCase(c.getName()) || name.equalsIgnoreCase(c.getSurname())){
                 return c;
             }
         }
